@@ -23,7 +23,10 @@ export const HeroSection = () => (
 				<p className="text-xs text-zinc-300 mt-4 font-mono">Reparos em até 1 hora</p>
 			</div>
 
-			<Button className="w-full h-11 hover:cursor-pointer uppercase font-bold bg-gradient-to-l from-[#FA4529] to-[#F2FF29]">Falar com especialista</Button>
+			<Button className="w-full h-14 hover:cursor-pointer text-white uppercase font-bold bg-[#25d366] hover:bg-[#0a8c7e] transition-colors duration-300">
+				Falar com especialista
+				<Image src="/icons/whatsapp-icon.svg" alt="" className="size-6" width={100} height={100} />
+			</Button>
 		</div>
 
 		<div className="flex justify-center items-center">
