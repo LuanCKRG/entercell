@@ -37,9 +37,9 @@ const serviceCardsArray = [
 
 export const ServicesSection = () => (
 	<section className="bg-gradient-to-br from-[#FA4529] to-[#F2FF29]">
-		<div className="p-8 grid grid-cols-3 gap-6">
+		<div className="p-2 md:p-8 flex flex-col md:grid md:grid-cols-3 gap-3 md:gap-6">
 			{serviceCardsArray.map(({ icon: Icon, ...service }) => (
-				<Card key={service.id} className="md:nth-4:translate-x-1/2 md:nth-5:translate-x-1/2 gap-3">
+				<Card key={service.id} className="md:nth-4:translate-x-1/2 md:nth-5:translate-x-1/2 gap-3 hover:scale-105 transition-transform duration-300">
 					<CardHeader className="gap-y-2">
 						<div className="mx-auto">
 							<Icon className="size-10 text-[#fcd20b]" />
