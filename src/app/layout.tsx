@@ -22,7 +22,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 	return (
 		<html lang="pt-BR">
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<main className="container mx-auto bg-gradient-to-br from-slate-50 to-blue-50">{children}</main>
+				<main className="bg-gradient-to-br from-slate-50 to-blue-50">{children}</main>
 			</body>
 		</html>
 	)
