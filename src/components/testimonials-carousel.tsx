@@ -31,22 +31,25 @@ const CarouselTestimonials = ({ testimonials }: { testimonials: Testimonial[] })
 		<CarouselContent>
 			{testimonials.map((testimonial) => (
 				<CarouselItem key={testimonial.id}>
-					<Card
+						<Card
+						key={testimonial.id}
 						className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg animate-scale-in"
 						style={{ animationDelay: `${testimonial.id * 0.1}s` }}
 					>
-						<CardContent className="p-6 space-y-4">
-							<div className="flex items-start justify-between">
-								<Quote className="h-8 w-8 text-gray-300" />
-								<div className="flex space-x-1">
-									{[...Array(testimonial.rating)].map((_, i) => (
-										// biome-ignore lint/suspicious/noArrayIndexKey:
-										<Star key={i} className="h-4 w-4 fill-entercell-orange text-entercell-orange" />
-									))}
+						<CardContent className="p-6 space-y-4 flex flex-col justify-between h-full">
+							<div>
+								<div className="flex items-start justify-between">
+									<Quote className="h-8 w-8 text-gray-300" />
+									<div className="flex space-x-1">
+										{[...Array(testimonial.rating)].map((_, i) => (
+											// biome-ignore lint/suspicious/noArrayIndexKey:
+											<Star key={i} className="h-4 w-4 fill-entercell-orange text-entercell-orange" />
+										))}
+									</div>
 								</div>
-							</div>
 
-							<p className="text-gray-700 italic leading-relaxed">"{testimonial.comment}"</p>
+								<p className="text-gray-700 italic leading-relaxed">"{testimonial.comment}"</p>
+							</div>
 
 							<div className="border-t border-gray-100 pt-4">
 								<div className="flex items-center justify-between">
