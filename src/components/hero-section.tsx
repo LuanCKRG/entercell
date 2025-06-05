@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CheckCircle, Smartphone, Shield, Clock, Star } from "lucide-react"
+import { CheckCircle, Smartphone, Shield, Star, FileText } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -104,10 +104,10 @@ const HeroSection = () => (
 								</div>
 								<div className="text-center space-y-2">
 									<div className="bg-gradient-to-br from-entercell-yellow to-entercell-orange p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
-										<Clock className="h-8 w-8 text-gray-900" />
+										<FileText className="h-8 w-8 text-gray-900" />
 									</div>
-									<h3 className="font-semibold text-gray-900">Rapidez</h3>
-									<p className="text-sm text-gray-600">Reparo em 30 minutos</p>
+									<h3 className="font-semibold text-gray-900">Nota Fiscal</h3>
+									<p className="text-sm text-gray-600">Emitimos nota fiscal para clientes PJ</p>
 								</div>
 								<div className="text-center space-y-2">
 									<div className="bg-gradient-to-br from-entercell-orange to-entercell-red p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
