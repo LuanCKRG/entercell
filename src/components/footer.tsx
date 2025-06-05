@@ -48,17 +48,17 @@ const Footer = () => (
 					<div className="space-y-3 text-gray-400">
 						<div className="flex items-center space-x-2">
 							<Phone className="h-4 w-4" />
-							<span>(11) 99999-9999</span>
+							<span>(11) 94735-0134</span>
 						</div>
 						<div className="flex items-center space-x-2">
 							<Mail className="h-4 w-4" />
-							<span>contato@entercell.com.br</span>
+							<span>entercellassistenciatecnica@gmail.com</span>
 						</div>
 						<div className="flex items-start space-x-2">
 							<MapPin className="h-4 w-4 mt-1" />
 							<div>
-								<p>Rua da Tecnologia, 123 - Centro</p>
-								<p>São Paulo - SP, 01234-567</p>
+								<p>Av. Aricanduva, 5102 - Jardim Aricanduva</p>
+								<p>São Paulo - SP, 03490-000</p>
 							</div>
 						</div>
 					</div>
