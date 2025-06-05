@@ -7,49 +7,52 @@ import { CarouselTestimonials } from "@/components/testimonials-carousel"
 const testimonials = [
 	{
 		id: 1,
-		name: "Maria Silva",
+		name: "Sidney Ortiz",
 		rating: 5,
-		comment: "Excelente atendimento! Trocaram a tela do meu iPhone em 30 minutos e deram 1 ano de garantia. Já faz 8 meses e está perfeita. Super recomendo!",
+		comment:
+			"São excelentes, resolveram meu problema e dão um atendimento de primeira linha, o pós retorno. O atendimento é no início, no fim e pós. De muita qualidade. Recomendo a loja. São melhores que autorizada da Motorola. A loja é de muita qualidade. Rayssa e o Thaylor são pessoas profissionais e muito atenciosos. Obrigado!",
 		service: "Troca de Tela - iPhone 13",
 		date: "Há 2 semanas"
 	},
 	{
 		id: 2,
-		name: "João Santos",
+		name: "Jéssica Tonon",
 		rating: 5,
-		comment: "Meu Samsung estava com problema na bateria. Fizeram a troca rapidinho e o preço foi muito justo. A garantia de 1 ano me deu muita segurança.",
+		comment:
+			"O serviço é impecável, a atenção que temos desde a explicação do problema, até a resolução, é indiscutível. Vocês estão de parabéns pela qualidade nos serviços e a atenção que dão aos clientes! Super recomendo...",
 		service: "Troca de Bateria - Galaxy S21",
 		date: "Há 1 mês"
 	},
 	{
 		id: 3,
-		name: "Ana Costa",
+		name: "Beatriz Numa",
 		rating: 5,
-		comment: "Profissionais muito competentes! Explicaram todo o processo, mostraram a peça original e o aparelho ficou como novo. Atendimento nota 10!",
+		comment:
+			"Recomendo muito!! Foram muito atenciosos e solícitos para consertar a câmera do meu celular que havia parado de funcionar. E ainda tem um preço justo",
 		service: "Reparo de Câmera - Xiaomi Mi 11",
-		date: "Há 3 semanas"
+		date: "Há 1 mês"
 	},
 	{
 		id: 4,
-		name: "Carlos Oliveira",
+		name: "Estella Muniz",
 		rating: 5,
-		comment: "Quebrei a tela na sexta-feira e precisava urgente para o trabalho. Conseguiram resolver no mesmo dia! Qualidade impecável e preço honesto.",
+		comment: "Atendimento nota mil! Precisei trocar o conector do usb e foram super atenciosos, prestativos e ágeis. Recomendo muito!",
 		service: "Troca de Tela - Galaxy A52",
-		date: "Há 1 semana"
+		date: "Há 3 semanas"
 	},
 	{
 		id: 5,
-		name: "Fernanda Lima",
+		name: "Lucas Smith",
 		rating: 5,
-		comment: "Já levei 3 celulares aqui ao longo dos anos. Sempre um atendimento excepcional, peças de qualidade e nunca tive problemas. Confiança total!",
+		comment: "Nota 10! Levei o meu xiaomi pocophone F1, e deu tudo certo. Super recomendo! Estão de parabéns",
 		service: "Cliente Fiel - Vários Reparos",
-		date: "Há 5 dias"
+		date: "Há 1 mês"
 	},
 	{
 		id: 6,
-		name: "Roberto Machado",
+		name: "João Vitor",
 		rating: 5,
-		comment: "Meu celular caiu na água e achei que não tinha mais jeito. Eles conseguiram recuperar tudo! Trabalho incrível, realmente salvaram meus dados.",
+		comment: "Ótimo atendimento, acabei de receber meu celular que foi para concerto! Tudo ótimo recomendo mt",
 		service: "Recuperação de Dados - Moto G9",
 		date: "Há 2 meses"
 	}
@@ -100,10 +103,7 @@ const TestimonialsSection = () => (
 
 							<div className="border-t border-gray-100 pt-4">
 								<div className="flex items-center justify-between">
-									<div>
-										<h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-										<p className="text-sm text-entercell-red">{testimonial.service}</p>
-									</div>
+									<h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
 									<div className="text-right">
 										<p className="text-xs text-gray-500">{testimonial.date}</p>
 										<Badge variant="outline" className="text-xs mt-1">
@@ -117,7 +117,7 @@ const TestimonialsSection = () => (
 				))}
 			</div>
 
-			<div className="mt-12 text-center">
+			<div className="mt-4 md:mt-12 text-center">
 				<Card className="max-w-2xl mx-auto border-2 border-entercell-red/20 bg-gradient-to-br from-entercell-red/5 to-entercell-orange/5">
 					<CardContent className="p-8">
 						<div className="flex max-md:flex-col items-center justify-center space-x-4 mb-4">
