@@ -33,9 +33,14 @@ const Header = () => (
 					</Link>
 				</nav>
 
-				<Button className="bg-gradient-to-r from-entercell-red to-entercell-orange hover:from-entercell-orange hover:to-entercell-red transition-all duration-300">
+				<Button
+					className="bg-gradient-to-r from-entercell-red to-entercell-orange hover:from-entercell-orange hover:to-entercell-red transition-all duration-300"
+					asChild
+				>
+					<a href="https://wa.me/5511947350134" target="_blank" rel="noopener noreferrer">
 					<Phone className="h-4 w-4 mr-2" />
 					Orçamento
+					</a>
 				</Button>
 			</div>
 		</div>

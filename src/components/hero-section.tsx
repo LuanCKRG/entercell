@@ -40,9 +40,12 @@ const HeroSection = () => (
 						<Button
 							size="lg"
 							className="bg-gradient-to-r from-entercell-red to-entercell-orange hover:from-entercell-orange hover:to-entercell-red transition-all duration-300 text-lg px-8 py-3"
+							asChild
 						>
-							<Smartphone className="h-5 w-5 mr-2" />
-							Solicitar Orçamento
+							<a href="https://wa.me/5511947350134" target="_blank" rel="noopener noreferrer">
+								<Smartphone className="h-5 w-5 mr-2" />
+								Solicitar Orçamento
+							</a>
 						</Button>
 						<Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 hover:bg-entercell-red hover:text-white transition-all duration-300">
 							Ver Serviços

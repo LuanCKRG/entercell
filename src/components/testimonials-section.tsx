@@ -130,18 +130,22 @@ const TestimonialsSection = () => (
 							Sua opinião é muito importante para nós! Deixe sua avaliação no Google e ajude outros clientes a conhecer nosso trabalho.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<button
-								type="button"
+							<a
+								href="https://g.co/kgs/BkW5fCu"
 								className="bg-gradient-to-r from-entercell-red to-entercell-orange text-white px-6 py-3 rounded-lg hover:from-entercell-orange hover:to-entercell-red transition-all duration-300"
+target="_blank"
+								rel="noopener noreferrer"
 							>
 								Avaliar no Google
-							</button>
-							<button
-								type="button"
+							</a>
+							<a
+								href="https://g.co/kgs/BkW5fCu"
 								className="border-2 border-entercell-red text-entercell-red px-6 py-3 rounded-lg hover:bg-entercell-red hover:text-white transition-all duration-300"
+target="_blank"
+								rel="noopener noreferrer"
 							>
 								Ver Todas as Avaliações
-							</button>
+							</a>
 						</div>
 					</CardContent>
 				</Card>

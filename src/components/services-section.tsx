@@ -73,9 +73,14 @@ const ServicesSection = () => (
 							<div>
 								<h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
 								<p className="text-gray-600 mb-3">{service.description}</p>
-								<p className="text-lg font-bold bg-gradient-to-r from-entercell-red to-entercell-orange bg-clip-text text-transparent">
+								<a
+									className="text-lg font-bold bg-gradient-to-r from-entercell-red to-entercell-orange bg-clip-text text-transparent"
+									href="https://wa.me/5511947350134"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									Solicite seu orçamento
-								</p>
+								</a>
 							</div>
 						</CardContent>
 					</Card>
