@@ -30,42 +30,42 @@ const services = [
 		icon: Smartphone,
 		title: "Troca de Tela",
 		description: "Displays LCD, OLED e AMOLED para todos os modelos Samsung, Apple e Motorola",
-		color: "from-[#fa4529] to-[#fcd20b]"
+		color: "from-entercell-red to-entercell-orange"
 	},
 	{
 		id: 2,
 		icon: Battery,
 		title: "Troca de Bateria",
 		description: "Baterias originais certificadas com 1 ano de garantia",
-		color: "from-[#f2ff29] to-[#fcd20b]"
+		color: "from-entercell-yellow to-entercell-orange"
 	},
 	{
 		id: 3,
 		icon: Camera,
 		title: "Reparo de Câmera",
 		description: "Câmeras frontais e traseiras de alta qualidade originais",
-		color: "from-[#fcd20b] to-[#fa4529]"
+		color: "from-entercell-orange to-entercell-red"
 	},
 	{
 		id: 4,
 		icon: Volume2,
 		title: "Alto-falante",
 		description: "Reparo de áudio e microfone com peças originais",
-		color: "from-[#fa4529] to-[#f2ff29]"
+		color: "from-entercell-red to-entercell-yellow"
 	},
 	{
 		id: 5,
 		icon: Zap,
 		title: "Conector de Carga",
 		description: "Reparo de entrada USB e carregamento - peças originais",
-		color: "from-[#fcd20b] to-[#f2ff29]"
+		color: "from-entercell-orange to-entercell-yellow"
 	},
 	{
 		id: 6,
 		icon: Wifi,
 		title: "Problemas de Conectividade",
 		description: "Wi-Fi, Bluetooth e dados móveis - componentes originais",
-		color: "from-[#f2ff29] to-[#fa4529]"
+		color: "from-entercell-yellow to-entercell-red"
 	}
 ]
 
@@ -137,21 +137,21 @@ const Home = () => {
 						</div>
 
 						<nav className="hidden md:flex items-center space-x-6">
-							<Link href="#services" className="text-gray-600 hover:text-[#fa4529] transition-colors">
+							<Link href="#services" className="text-gray-600 hover:text-entercell-red transition-colors">
 								Serviços
 							</Link>
-							<Link href="#warranty" className="text-gray-600 hover:text-[#fa4529] transition-colors">
+							<Link href="#warranty" className="text-gray-600 hover:text-entercell-red transition-colors">
 								Garantia
 							</Link>
-							<Link href="#testimonials" className="text-gray-600 hover:text-[#fa4529] transition-colors">
+							<Link href="#testimonials" className="text-gray-600 hover:text-entercell-red transition-colors">
 								Avaliações
 							</Link>
-							<Link href="#contact" className="text-gray-600 hover:text-[#fa4529] transition-colors">
+							<Link href="#contact" className="text-gray-600 hover:text-entercell-red transition-colors">
 								Contato
 							</Link>
 						</nav>
 
-						<Button className="bg-gradient-to-r from-[#fa4529] to-[#fcd20b] hover:from-[#fcd20b] hover:to-[#fa4529] transition-all duration-300">
+						<Button className="bg-gradient-to-r from-entercell-red to-entercell-orange hover:from-entercell-orange hover:to-entercell-red transition-all duration-300">
 							<Phone className="h-4 w-4 mr-2" />
 							Orçamento
 						</Button>
@@ -164,10 +164,10 @@ const Home = () => {
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<div className="space-y-8 animate-fade-in">
 							<div className="space-y-4">
-								<Badge className="bg-gradient-to-r from-[#fa4529] to-[#fcd20b] text-white">⚡ Reparo Rápido e Confiável</Badge>
+								<Badge className="bg-gradient-to-r from-entercell-red to-entercell-orange text-white">⚡ Reparo Rápido e Confiável</Badge>
 								<h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
 									Conserte seu
-									<span className="bg-gradient-to-r from-[#fa4529] to-[#fcd20b] bg-clip-text text-transparent"> celular </span>
+									<span className="bg-gradient-to-r from-entercell-red to-entercell-orange bg-clip-text text-transparent"> celular </span>
 									com garantia
 								</h1>
 								<p className="text-xl text-gray-600 leading-relaxed">
@@ -177,15 +177,15 @@ const Home = () => {
 
 							<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 								<div className="flex items-center space-x-2">
-									<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+									<CheckCircle className="h-5 w-5 text-entercell-orange" />
 									<span className="text-gray-700">Reparo em 30min</span>
 								</div>
 								<div className="flex items-center space-x-2">
-									<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+									<CheckCircle className="h-5 w-5 text-entercell-orange" />
 									<span className="text-gray-700">Peças originais</span>
 								</div>
 								<div className="flex items-center space-x-2">
-									<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+									<CheckCircle className="h-5 w-5 text-entercell-orange" />
 									<span className="text-gray-700">1 ano garantia</span>
 								</div>
 							</div>
@@ -193,12 +193,12 @@ const Home = () => {
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Button
 									size="lg"
-									className="bg-gradient-to-r from-[#fa4529] to-[#fcd20b] hover:from-[#fcd20b] hover:to-[#fa4529] transition-all duration-300 text-lg px-8 py-3"
+									className="bg-gradient-to-r from-entercell-red to-entercell-orange hover:from-entercell-orange hover:to-entercell-red transition-all duration-300 text-lg px-8 py-3"
 								>
 									<Smartphone className="h-5 w-5 mr-2" />
 									Solicitar Orçamento
 								</Button>
-								<Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 hover:bg-[#fa4529] hover:text-white transition-all duration-300">
+								<Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 hover:bg-entercell-red hover:text-white transition-all duration-300">
 									Ver Serviços
 								</Button>
 							</div>
@@ -243,32 +243,32 @@ const Home = () => {
 
 						<div className="relative animate-scale-in">
 							<div className="relative">
-								<div className="absolute -inset-4 bg-gradient-to-r from-[#fa4529] to-[#fcd20b] rounded-lg blur opacity-30 animate-pulse-slow" />
+								<div className="absolute -inset-4 bg-gradient-to-r from-entercell-red to-entercell-orange rounded-lg blur opacity-30 animate-pulse-slow" />
 								<div className="relative bg-white rounded-2xl p-8 shadow-2xl border">
 									<div className="grid grid-cols-2 gap-6">
 										<div className="text-center space-y-2">
-											<div className="bg-gradient-to-br from-[#fa4529] to-[#fcd20b] p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+											<div className="bg-gradient-to-br from-entercell-red to-entercell-orange p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
 												<Shield className="h-8 w-8 text-white" />
 											</div>
 											<h3 className="font-semibold text-gray-900">Garantia</h3>
 											<p className="text-sm text-gray-600">Até 1 ano para peças originais</p>
 										</div>
 										<div className="text-center space-y-2">
-											<div className="bg-gradient-to-br from-[#f2ff29] to-[#fcd20b] p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+											<div className="bg-gradient-to-br from-entercell-yellow to-entercell-orange p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
 												<Clock className="h-8 w-8 text-gray-900" />
 											</div>
 											<h3 className="font-semibold text-gray-900">Rapidez</h3>
 											<p className="text-sm text-gray-600">Reparo em 30 minutos</p>
 										</div>
 										<div className="text-center space-y-2">
-											<div className="bg-gradient-to-br from-[#fcd20b] to-[#fa4529] p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+											<div className="bg-gradient-to-br from-entercell-orange to-entercell-red p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
 												<Star className="h-8 w-8 text-white" />
 											</div>
 											<h3 className="font-semibold text-gray-900">Qualidade</h3>
 											<p className="text-sm text-gray-600">5.0 estrelas no Google</p>
 										</div>
 										<div className="text-center space-y-2">
-											<div className="bg-gradient-to-br from-[#f2ff29] to-[#fa4529] p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
+											<div className="bg-gradient-to-br from-entercell-yellow to-entercell-red p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center">
 												<Smartphone className="h-8 w-8 text-gray-900" />
 											</div>
 											<h3 className="font-semibold text-gray-900">Expertise</h3>
@@ -307,7 +307,9 @@ const Home = () => {
 									<div>
 										<h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
 										<p className="text-gray-600 mb-3">{service.description}</p>
-										<p className="text-lg font-bold bg-gradient-to-r from-[#fa4529] to-[#fcd20b] bg-clip-text text-transparent">Solicite seu orçamento</p>
+										<p className="text-lg font-bold bg-gradient-to-r from-entercell-red to-entercell-orange bg-clip-text text-transparent">
+											Solicite seu orçamento
+										</p>
 									</div>
 								</CardContent>
 							</Card>
@@ -319,7 +321,7 @@ const Home = () => {
 			<section id="warranty" className="py-20 bg-gradient-to-br from-slate-50 to-orange-50">
 				<div className="container mx-auto px-4">
 					<div className="text-center mb-16 animate-fade-in">
-						<Badge className="bg-gradient-to-r from-[#fa4529] to-[#fcd20b] text-white mb-4">🛡️ Garantia Diferenciada</Badge>
+						<Badge className="bg-gradient-to-r from-entercell-red to-entercell-orange text-white mb-4">🛡️ Garantia Diferenciada</Badge>
 						<h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Garantia que Protege</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Oferecemos diferentes tipos de garantia dependendo do tipo de peça utilizada, sempre pensando na sua tranquilidade.
@@ -330,40 +332,41 @@ const Home = () => {
 						<Card className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg animate-scale-in">
 							<CardContent className="p-8 space-y-6">
 								<div className="flex items-center space-x-4">
-									<div className="bg-gradient-to-br from-[#f2ff29] to-[#fcd20b] p-4 rounded-full">
+									<div className="bg-gradient-to-br from-entercell-yellow to-entercell-orange p-4 rounded-full">
 										<Award className="h-8 w-8 text-gray-900" />
 									</div>
 									<div>
 										<h3 className="text-2xl font-bold text-gray-900">Peças Originais</h3>
-										<Badge className="bg-[#f2ff29] text-gray-900 mt-2">1 ANO DE GARANTIA</Badge>
+										<Badge className="bg-entercell-yellow text-gray-900 mt-2">1 ANO DE GARANTIA</Badge>
 									</div>
 								</div>
 
 								<p className="text-gray-600 text-lg">
 									Para reparos utilizando peças originais Samsung, Apple e Motorola, oferecemos
-									<strong className="text-[#fa4529]"> 1 ano completo de garantia</strong>, cobrindo defeitos de fabricação e problemas relacionados ao reparo.
+									<strong className="text-entercell-red"> 1 ano completo de garantia</strong>, cobrindo defeitos de fabricação e problemas relacionados ao
+									reparo.
 								</p>
 
 								<div className="space-y-3">
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+										<CheckCircle className="h-5 w-5 text-entercell-yellow" />
 										<span className="text-gray-700">Peças 100% originais certificadas</span>
 									</div>
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+										<CheckCircle className="h-5 w-5 text-entercell-yellow" />
 										<span className="text-gray-700">Garantia nacional válida</span>
 									</div>
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+										<CheckCircle className="h-5 w-5 text-entercell-yellow" />
 										<span className="text-gray-700">Suporte técnico especializado</span>
 									</div>
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#f2ff29]" />
+										<CheckCircle className="h-5 w-5 text-entercell-yellow" />
 										<span className="text-gray-700">Mão de obra qualificada</span>
 									</div>
 								</div>
 
-								<div className="bg-gradient-to-r from-[#f2ff29]/10 to-[#fcd20b]/10 p-4 rounded-lg border-l-4 border-[#f2ff29]">
+								<div className="bg-gradient-to-r from-entercell-yellow/10 to-entercell-orange/10 p-4 rounded-lg border-l-4 border-entercell-yellow">
 									<p className="text-sm text-gray-700">
 										<strong>Importante:</strong> A garantia cobre defeitos de fabricação e problemas relacionados ao serviço executado, não incluindo danos
 										causados por mau uso.
@@ -378,40 +381,40 @@ const Home = () => {
 						>
 							<CardContent className="p-8 space-y-6">
 								<div className="flex items-center space-x-4">
-									<div className="bg-gradient-to-br from-[#fa4529] to-[#fcd20b] p-4 rounded-full">
+									<div className="bg-gradient-to-br from-entercell-red to-entercell-orange p-4 rounded-full">
 										<Shield className="h-8 w-8 text-white" />
 									</div>
 									<div>
 										<h3 className="text-2xl font-bold text-gray-900">Peças Paralelas</h3>
-										<Badge className="bg-[#fa4529] text-white mt-2">3 MESES DE GARANTIA</Badge>
+										<Badge className="bg-entercell-red text-white mt-2">3 MESES DE GARANTIA</Badge>
 									</div>
 								</div>
 
 								<p className="text-gray-600 text-lg">
 									Para reparos com peças paralelas de alta qualidade, oferecemos
-									<strong className="text-[#fa4529]"> 3 meses de garantia</strong>, uma das maiores do mercado para este tipo de componente.
+									<strong className="text-entercell-red"> 3 meses de garantia</strong>, uma das maiores do mercado para este tipo de componente.
 								</p>
 
 								<div className="space-y-3">
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#fa4529]" />
+										<CheckCircle className="h-5 w-5 text-entercell-red" />
 										<span className="text-gray-700">Peças testadas e aprovadas</span>
 									</div>
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#fa4529]" />
+										<CheckCircle className="h-5 w-5 text-entercell-red" />
 										<span className="text-gray-700">Qualidade premium garantida</span>
 									</div>
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#fa4529]" />
+										<CheckCircle className="h-5 w-5 text-entercell-red" />
 										<span className="text-gray-700">Melhor custo-benefício</span>
 									</div>
 									<div className="flex items-center space-x-3">
-										<CheckCircle className="h-5 w-5 text-[#fa4529]" />
+										<CheckCircle className="h-5 w-5 text-entercell-red" />
 										<span className="text-gray-700">Instalação profissional</span>
 									</div>
 								</div>
 
-								<div className="bg-gradient-to-r from-[#fa4529]/10 to-[#fcd20b]/10 p-4 rounded-lg border-l-4 border-[#fa4529]">
+								<div className="bg-gradient-to-r from-entercell-red/10 to-entercell-orange/10 p-4 rounded-lg border-l-4 border-entercell-red">
 									<p className="text-sm text-gray-700">
 										<strong>Vantagem:</strong> Opção econômica sem abrir mão da qualidade. Ideal para quem busca um reparo eficiente com excelente
 										custo-benefício.
@@ -425,7 +428,7 @@ const Home = () => {
 						<Card className="max-w-4xl mx-auto border-0 shadow-lg">
 							<CardContent className="p-8">
 								<div className="flex items-center justify-center space-x-4 mb-4">
-									<Clock className="h-8 w-8 text-[#fcd20b]" />
+									<Clock className="h-8 w-8 text-entercell-orange" />
 									<h3 className="text-2xl font-bold text-gray-900">Processo de Garantia</h3>
 								</div>
 								<p className="text-gray-600 text-lg mb-6">
@@ -433,21 +436,21 @@ const Home = () => {
 								</p>
 								<div className="grid md:grid-cols-3 gap-6">
 									<div className="text-center">
-										<div className="bg-gradient-to-br from-[#fa4529] to-[#fcd20b] text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+										<div className="bg-gradient-to-br from-entercell-red to-entercell-orange text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">
 											1
 										</div>
 										<h4 className="font-semibold text-gray-900 mb-2">Identifique o Problema</h4>
 										<p className="text-sm text-gray-600">Venha até nossa loja com seu aparelho e nota fiscal do serviço</p>
 									</div>
 									<div className="text-center">
-										<div className="bg-gradient-to-br from-[#f2ff29] to-[#fcd20b] text-gray-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+										<div className="bg-gradient-to-br from-entercell-yellow to-entercell-orange text-gray-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">
 											2
 										</div>
 										<h4 className="font-semibold text-gray-900 mb-2">Análise Técnica</h4>
 										<p className="text-sm text-gray-600">Nossa equipe fará uma análise completa em até 30 minutos</p>
 									</div>
 									<div className="text-center">
-										<div className="bg-gradient-to-br from-[#fcd20b] to-[#fa4529] text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+										<div className="bg-gradient-to-br from-entercell-orange to-entercell-red text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">
 											3
 										</div>
 										<h4 className="font-semibold text-gray-900 mb-2">Solução Garantida</h4>
@@ -463,13 +466,13 @@ const Home = () => {
 			<section id="testimonials" className="py-20 bg-white">
 				<div className="container mx-auto px-4">
 					<div className="text-center mb-16 animate-fade-in">
-						<Badge className="bg-gradient-to-r from-[#fcd20b] to-[#fa4529] text-white mb-4">⭐ Avaliações Reais do Google</Badge>
+						<Badge className="bg-gradient-to-r from-entercell-orange to-entercell-red text-white mb-4">⭐ Avaliações Reais do Google</Badge>
 						<h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">O que nossos clientes dizem</h2>
 						<div className="flex items-center justify-center space-x-2 mb-6">
 							<div className="flex space-x-1">
 								{[...Array(5)].map((_, i) => (
 									// biome-ignore lint/suspicious/noArrayIndexKey:
-									<Star key={i} className="h-6 w-6 fill-[#fcd20b] text-[#fcd20b]" />
+									<Star key={i} className="h-6 w-6 fill-entercell-orange text-entercell-orange" />
 								))}
 							</div>
 							<span className="text-2xl font-bold text-gray-900">5.0</span>
@@ -493,7 +496,7 @@ const Home = () => {
 										<div className="flex space-x-1">
 											{[...Array(testimonial.rating)].map((_, i) => (
 												// biome-ignore lint/suspicious/noArrayIndexKey:
-												<Star key={i} className="h-4 w-4 fill-[#fcd20b] text-[#fcd20b]" />
+												<Star key={i} className="h-4 w-4 fill-entercell-orange text-entercell-orange" />
 											))}
 										</div>
 									</div>
@@ -504,7 +507,7 @@ const Home = () => {
 										<div className="flex items-center justify-between">
 											<div>
 												<h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-												<p className="text-sm text-[#fa4529]">{testimonial.service}</p>
+												<p className="text-sm text-entercell-red">{testimonial.service}</p>
 											</div>
 											<div className="text-right">
 												<p className="text-xs text-gray-500">{testimonial.date}</p>
@@ -520,10 +523,10 @@ const Home = () => {
 					</div>
 
 					<div className="mt-12 text-center">
-						<Card className="max-w-2xl mx-auto border-2 border-[#fa4529]/20 bg-gradient-to-br from-[#fa4529]/5 to-[#fcd20b]/5">
+						<Card className="max-w-2xl mx-auto border-2 border-entercell-red/20 bg-gradient-to-br from-entercell-red/5 to-entercell-orange/5">
 							<CardContent className="p-8">
 								<div className="flex items-center justify-center space-x-4 mb-4">
-									<div className="bg-gradient-to-br from-[#fa4529] to-[#fcd20b] p-3 rounded-full">
+									<div className="bg-gradient-to-br from-entercell-red to-entercell-orange p-3 rounded-full">
 										<Star className="h-6 w-6 text-white" />
 									</div>
 									<h3 className="text-2xl font-bold text-gray-900">Avalie nossa experiência</h3>
@@ -534,13 +537,13 @@ const Home = () => {
 								<div className="flex flex-col sm:flex-row gap-4 justify-center">
 									<button
 										type="button"
-										className="bg-gradient-to-r from-[#fa4529] to-[#fcd20b] text-white px-6 py-3 rounded-lg hover:from-[#fcd20b] hover:to-[#fa4529] transition-all duration-300"
+										className="bg-gradient-to-r from-entercell-red to-entercell-orange text-white px-6 py-3 rounded-lg hover:from-entercell-orange hover:to-entercell-red transition-all duration-300"
 									>
 										Avaliar no Google
 									</button>
 									<button
 										type="button"
-										className="border-2 border-[#fa4529] text-[#fa4529] px-6 py-3 rounded-lg hover:bg-[#fa4529] hover:text-white transition-all duration-300"
+										className="border-2 border-entercell-red text-entercell-red px-6 py-3 rounded-lg hover:bg-entercell-red hover:text-white transition-all duration-300"
 									>
 										Ver Todas as Avaliações
 									</button>
@@ -565,14 +568,14 @@ const Home = () => {
 							<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
 								<CardContent className="p-6">
 									<div className="flex items-start space-x-4">
-										<div className="bg-gradient-to-br from-[#f2ff29] to-[#fcd20b] p-3 rounded-full">
+										<div className="bg-gradient-to-br from-entercell-yellow to-entercell-orange p-3 rounded-full">
 											<Phone className="h-6 w-6 text-white" />
 										</div>
 										<div className="flex-1">
 											<h3 className="text-xl font-semibold text-gray-900 mb-2">Telefone</h3>
 											<p className="text-gray-600 mb-3">Ligue para nós e faça seu orçamento</p>
-											<p className="text-2xl font-bold text-[#fa4529]">(11) 99999-9999</p>
-											<Button className="mt-3 bg-[#fa4529] hover:bg-[#fa4529]/90">
+											<p className="text-2xl font-bold text-entercell-red">(11) 99999-9999</p>
+											<Button className="mt-3 bg-entercell-red hover:bg-entercell-red/90">
 												<Phone className="h-4 w-4 mr-2" />
 												Ligar Agora
 											</Button>
@@ -584,14 +587,14 @@ const Home = () => {
 							<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
 								<CardContent className="p-6">
 									<div className="flex items-start space-x-4">
-										<div className="bg-gradient-to-br from-[#fa4529] to-[#fcd20b] p-3 rounded-full">
+										<div className="bg-gradient-to-br from-entercell-red to-entercell-orange p-3 rounded-full">
 											<MessageCircle className="h-6 w-6 text-white" />
 										</div>
 										<div className="flex-1">
 											<h3 className="text-xl font-semibold text-gray-900 mb-2">WhatsApp</h3>
 											<p className="text-gray-600 mb-3">Atendimento rápido via WhatsApp</p>
-											<p className="text-2xl font-bold text-[#fa4529]">(11) 99999-9999</p>
-											<Button className="mt-3 bg-[#fa4529] hover:bg-[#fa4529]/90">
+											<p className="text-2xl font-bold text-entercell-red">(11) 99999-9999</p>
+											<Button className="mt-3 bg-entercell-red hover:bg-entercell-red/90">
 												<MessageCircle className="h-4 w-4 mr-2" />
 												Chamar no WhatsApp
 											</Button>
@@ -603,14 +606,14 @@ const Home = () => {
 							<Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
 								<CardContent className="p-6">
 									<div className="flex items-start space-x-4">
-										<div className="bg-gradient-to-br from-[#fcd20b] to-[#f2ff29] p-3 rounded-full">
+										<div className="bg-gradient-to-br from-entercell-orange to-entercell-yellow p-3 rounded-full">
 											<Mail className="h-6 w-6 text-white" />
 										</div>
 										<div className="flex-1">
 											<h3 className="text-xl font-semibold text-gray-900 mb-2">E-mail</h3>
 											<p className="text-gray-600 mb-3">Envie sua dúvida por e-mail</p>
-											<p className="text-lg font-semibold text-[#fa4529]">contato@entercell.com.br</p>
-											<Button variant="outline" className="mt-3 border-[#fcd20b] text-[#fcd20b] hover:bg-[#fcd20b] hover:text-white">
+											<p className="text-lg font-semibold text-entercell-red">contato@entercell.com.br</p>
+											<Button variant="outline" className="mt-3 border-entercell-orange text-entercell-orange hover:bg-entercell-orange hover:text-white">
 												<Mail className="h-4 w-4 mr-2" />
 												Enviar E-mail
 											</Button>
@@ -624,7 +627,7 @@ const Home = () => {
 							<Card className="border-0 shadow-lg">
 								<CardContent className="p-6">
 									<div className="flex items-start space-x-4 mb-6">
-										<div className="bg-gradient-to-br from-[#fa4529] to-[#fcd20b] p-3 rounded-full">
+										<div className="bg-gradient-to-br from-entercell-red to-entercell-orange p-3 rounded-full">
 											<MapPin className="h-6 w-6 text-white" />
 										</div>
 										<div>
@@ -640,7 +643,7 @@ const Home = () => {
 											<p className="text-gray-600">São Paulo - SP, 01234-567</p>
 										</div>
 
-										<Button className="w-full bg-gradient-to-r from-[#fa4529] to-[#fcd20b] hover:from-[#fcd20b] hover:to-[#fa4529]">
+										<Button className="w-full bg-gradient-to-r from-entercell-red to-entercell-orange hover:from-entercell-orange hover:to-entercell-red">
 											<Navigation className="h-4 w-4 mr-2" />
 											Como Chegar
 										</Button>
@@ -651,7 +654,7 @@ const Home = () => {
 							<Card className="border-0 shadow-lg">
 								<CardContent className="p-6">
 									<div className="flex items-start space-x-4 mb-6">
-										<div className="bg-gradient-to-br from-[#fcd20b] to-[#f2ff29] p-3 rounded-full">
+										<div className="bg-gradient-to-br from-entercell-orange to-entercell-yellow p-3 rounded-full">
 											<Clock className="h-6 w-6 text-white" />
 										</div>
 										<div>
@@ -675,7 +678,7 @@ const Home = () => {
 										</div>
 									</div>
 
-									<div className="mt-4 p-3 bg-[#f2ff29]/10 rounded-lg border-l-4 border-[#f2ff29]">
+									<div className="mt-4 p-3 bg-entercell-yellow/10 rounded-lg border-l-4 border-entercell-yellow">
 										<p className="text-sm text-gray-700">
 											<strong>Atendimento expresso:</strong> Reparos simples em até 30 minutos!
 										</p>
