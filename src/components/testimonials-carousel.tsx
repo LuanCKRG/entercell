@@ -50,10 +50,7 @@ const CarouselTestimonials = ({ testimonials }: { testimonials: Testimonial[] })
 
 							<div className="border-t border-gray-100 pt-4">
 								<div className="flex items-center justify-between">
-									<div>
-										<h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-										<p className="text-sm text-entercell-red">{testimonial.service}</p>
-									</div>
+									<h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
 									<div className="text-right">
 										<p className="text-xs text-gray-500">{testimonial.date}</p>
 										<Badge variant="outline" className="text-xs mt-1">
