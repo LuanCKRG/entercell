@@ -1,6 +1,7 @@
-import { Badge, CheckCircle, Shield, Clock, Award } from "lucide-react"
+import { CheckCircle, Shield, Clock, Award } from "lucide-react"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 const WarrantySection = () => (
 	<section id="warranty" className="py-20 bg-gradient-to-br from-slate-50 to-orange-50">

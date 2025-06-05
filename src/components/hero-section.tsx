@@ -1,7 +1,8 @@
 import Image from "next/image"
-import { Badge, CheckCircle, Smartphone, Shield, Clock, Star } from "lucide-react"
+import { CheckCircle, Smartphone, Shield, Clock, Star } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 
 const HeroSection = () => (
 	<section className="py-20 bg-gradient-to-br from-slate-50 to-orange-50">
