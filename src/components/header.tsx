@@ -10,7 +10,7 @@ const Header = () => (
 			<div className="flex items-center justify-between">
 				<div className="flex items-center space-x-3">
 					<div className="w-12 h-12">
-						<Image src="/entercell.svg" alt="ENTERCELL Logo" className="w-full h-full object-contain" width={500} height={500} />
+						<Image src="/logo_cell.svg" alt="ENTERCELL Logo" className="w-full h-full object-contain brightness-0" width={500} height={500} />
 					</div>
 					<div>
 						<h1 className="text-xl font-bold text-gray-900">ENTERCELL</h1>
@@ -38,8 +38,8 @@ const Header = () => (
 					asChild
 				>
 					<a href="https://wa.me/5511947350134" target="_blank" rel="noopener noreferrer">
-					<Phone className="h-4 w-4 mr-2" />
-					Orçamento
+						<Phone className="h-4 w-4 mr-2" />
+						Orçamento
 					</a>
 				</Button>
 			</div>
