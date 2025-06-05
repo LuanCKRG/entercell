@@ -2,6 +2,7 @@ import { Star, Quote } from "lucide-react"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { CarouselTestimonials } from "@/components/testimonials-carousel"
 
 const testimonials = [
 	{
@@ -75,8 +76,10 @@ const TestimonialsSection = () => (
 				</p>
 			</div>
 
-			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{testimonials.map((testimonial, index) => (
+			<CarouselTestimonials testimonials={testimonials} />
+
+			<div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{testimonials.map((testimonial) => (
 					<Card
 						key={testimonial.id}
 						className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg animate-scale-in"
@@ -117,7 +120,7 @@ const TestimonialsSection = () => (
 			<div className="mt-12 text-center">
 				<Card className="max-w-2xl mx-auto border-2 border-entercell-red/20 bg-gradient-to-br from-entercell-red/5 to-entercell-orange/5">
 					<CardContent className="p-8">
-						<div className="flex items-center justify-center space-x-4 mb-4">
+						<div className="flex max-md:flex-col items-center justify-center space-x-4 mb-4">
 							<div className="bg-gradient-to-br from-entercell-red to-entercell-orange p-3 rounded-full">
 								<Star className="h-6 w-6 text-white" />
 							</div>
