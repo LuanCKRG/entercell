@@ -1,6 +1,3 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import {
 	Award,
 	Battery,
@@ -20,8 +17,12 @@ import {
 	Wifi,
 	Zap
 } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
+import Link from "next/link"
+
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
 	{
