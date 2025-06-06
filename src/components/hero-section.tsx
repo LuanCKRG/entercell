@@ -21,7 +21,7 @@ const HeroSection = () => (
 						</p>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 						<div className="flex items-center space-x-2">
 							<CheckCircle className="h-5 w-5 text-entercell-orange" />
 							<span className="text-gray-700">Reparo em 30min</span>
@@ -33,6 +33,10 @@ const HeroSection = () => (
 						<div className="flex items-center space-x-2">
 							<CheckCircle className="h-5 w-5 text-entercell-orange" />
 							<span className="text-gray-700">1 ano garantia</span>
+						</div>
+						<div className="flex items-center space-x-2">
+							<CheckCircle className="h-5 w-5 text-entercell-orange" />
+							<span className="text-gray-700">Fazemos delivery</span>
 						</div>
 					</div>
 
