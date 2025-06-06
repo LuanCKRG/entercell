@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { CheckCircle, Smartphone, Shield, Star, FileText } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -51,8 +52,13 @@ const HeroSection = () => (
 								Solicitar Orçamento
 							</a>
 						</Button>
-						<Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 hover:bg-entercell-red hover:text-white transition-all duration-300">
-							Ver Serviços
+						<Button
+							variant="outline"
+							size="lg"
+							className="text-lg px-8 py-3 border-2 hover:bg-entercell-red hover:text-white transition-all duration-300"
+							asChild
+						>
+							<Link href="#services">Ver Serviços</Link>
 						</Button>
 					</div>
 
