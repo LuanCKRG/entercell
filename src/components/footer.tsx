@@ -52,7 +52,7 @@ const Footer = () => (
 						</div>
 						<div className="flex items-center space-x-2">
 							<Mail className="h-4 w-4" />
-							<span>entercellassistenciatecnica@gmail.com</span>
+							<span className="break-all">entercellassistenciatecnica@gmail.com</span>
 						</div>
 						<div className="flex items-start space-x-2">
 							<MapPin className="h-4 w-4 mt-1" />
@@ -66,7 +66,7 @@ const Footer = () => (
 			</div>
 
 			<div className="border-t border-gray-800 mt-8 pt-8 text-center">
-				<p className="text-gray-400">© 2025 ENTERCELL. Todos os direitos reservados. CNPJ: 12.345.678/0001-90</p>
+				<p className="text-gray-400">© 2025 ENTERCELL. Todos os direitos reservados. CNPJ: 31.409.437/0001-07</p>
 			</div>
 		</div>
 	</footer>
